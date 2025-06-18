@@ -1,0 +1,616 @@
+.dark-theme {
+  background-color: #1a1a1a !important;
+  color: #e0e0e0 !important;
+}
+
+.dark-theme .navbar-dark {
+  background-color: #2d2d2d !important;
+}
+
+.dark-theme .card {
+  background-color: #2d2d2d !important;
+  border-color: #404040 !important;
+  color: #e0e0e0 !important;
+}
+
+.dark-theme .card-header {
+  background-color: #404040 !important;
+  border-bottom-color: #505050 !important;
+  color: #e0e0e0 !important;
+}
+
+.dark-theme .table {
+  color: #e0e0e0 !important;
+  background-color: #2d2d2d !important;
+}
+
+.dark-theme .table-dark {
+  background-color: #404040 !important;
+}
+
+.dark-theme .table-striped > tbody > tr:nth-of-type(odd) > td {
+  background-color: #353535 !important;
+}
+
+.dark-theme .table-hover tbody tr:hover {
+  background-color: #404040 !important;
+}
+
+.dark-theme .form-select {
+  background-color: #2d2d2d !important;
+  border-color: #404040 !important;
+  color: #e0e0e0 !important;
+}
+
+.dark-theme .form-select:focus {
+  background-color: #2d2d2d !important;
+  border-color: #0d6efd !important;
+  color: #e0e0e0 !important;
+}
+
+.dark-theme .bg-light {
+  background-color: #404040 !important;
+}
+
+.dark-theme .bg-dark {
+  background-color: #1a1a1a !important;
+}
+
+.dark-theme .text-muted {
+  color: #b0b0b0 !important;
+}
+
+.dark-theme .border {
+  border-color: #404040 !important;
+}
+
+.dark-theme .list-group-item {
+  background-color: #2d2d2d !important;
+  border-color: #404040 !important;
+  color: #e0e0e0 !important;
+}
+
+.dark-theme .spinner-border {
+  color: #0d6efd !important;
+}
+
+/* Animated theme toggle button */
+.theme-toggle {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background: linear-gradient(45deg, #f39c12, #e67e22);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+}
+
+.theme-toggle.dark {
+  background: linear-gradient(45deg, #2c3e50, #34495e);
+}
+
+.theme-toggle::before {
+  content: '☀️';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 26px;
+  height: 26px;
+  background: white;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.theme-toggle.dark::before {
+  content: '🌙';
+  transform: translateX(30px);
+  background: #34495e;
+}
+
+/* Enhanced card animations */
+.enhanced-card {
+  transition: all 0.3s ease;
+  border-radius: 12px !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.enhanced-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.dark-theme .enhanced-card {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.dark-theme .enhanced-card:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+/* Glowing effects for metrics cards */
+.metric-card {
+  background: linear-gradient(135deg, var(--card-bg), var(--card-bg-light));
+  border: none !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.metric-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  transition: left 0.5s;
+}
+
+.metric-card:hover::before {
+  left: 100%;
+}
+
+/* Animated loading spinner */
+.custom-spinner {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255,255,255,.3);
+  border-radius: 50%;
+  border-top-color: #007bff;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Enhanced chart containers */
+.chart-container {
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  padding: 15px;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.dark-theme .chart-container {
+  background: rgba(255,255,255,0.02);
+}
+
+.chart-container:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+.dark-theme .chart-container:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Enhanced badge styles */
+.enhanced-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Floating action button for reports */
+.fab-report {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #e74c3c, #c0392b);
+  border: none;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0 4px 20px rgba(231, 76, 60, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.fab-report:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(231, 76, 60, 0.6);
+}
+
+/* Enhanced footer */
+.enhanced-footer {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  padding: 40px 0;
+  margin-top: 50px;
+}
+
+.dark-theme .enhanced-footer {
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+}
+
+/* Add this to your src/darkmode.css file - Mobile Responsive Enhancements */
+
+/* Mobile-first responsive design */
+@media (max-width: 768px) {
+  /* Mobile navigation */
+  .navbar-brand {
+    font-size: 1rem !important;
+  }
+  
+  .navbar-text {
+    display: none !important;
+  }
+  
+  .theme-toggle {
+    width: 50px !important;
+    height: 25px !important;
+  }
+  
+  .theme-toggle::before {
+    width: 21px !important;
+    height: 21px !important;
+    font-size: 10px !important;
+  }
+  
+  .theme-toggle.dark::before {
+    transform: translateX(25px) !important;
+  }
+
+  /* Mobile filters */
+  .card-header .row {
+    flex-direction: column !important;
+    gap: 10px;
+  }
+  
+  .col-md-3 {
+    margin-bottom: 15px;
+  }
+  
+  /* Mobile metric cards */
+  .display-6 {
+    font-size: 2rem !important;
+  }
+  
+  .card-body h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  .card-body h5 {
+    font-size: 1rem !important;
+  }
+  
+  .card-body small {
+    font-size: 0.75rem !important;
+  }
+
+  /* Mobile charts */
+  .recharts-wrapper {
+    font-size: 12px !important;
+  }
+  
+  .recharts-cartesian-axis-tick-value {
+    font-size: 10px !important;
+  }
+  
+  .recharts-tooltip-wrapper {
+    font-size: 12px !important;
+  }
+
+  /* Mobile tables */
+  .table {
+    font-size: 0.8rem !important;
+  }
+  
+  .table th,
+  .table td {
+    padding: 0.5rem !important;
+  }
+  
+  .table-responsive {
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+  }
+
+  /* Mobile product list */
+  .list-group-item {
+    padding: 0.75rem 0.5rem !important;
+  }
+  
+  .list-group-item h6 {
+    font-size: 0.8rem !important;
+  }
+  
+  .list-group-item .fw-bold {
+    font-size: 0.8rem !important;
+  }
+
+  /* Mobile footer */
+  .enhanced-footer .row {
+    text-align: center !important;
+  }
+  
+  .enhanced-footer .col-md-6:last-child {
+    margin-top: 20px;
+  }
+  
+  .enhanced-footer .d-flex {
+    flex-direction: column !important;
+    gap: 15px !important;
+  }
+
+  /* Mobile floating button */
+  .fab-report {
+    width: 50px !important;
+    height: 50px !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    font-size: 16px !important;
+  }
+
+  /* Mobile ML predictions */
+  .ml-section .col-md-4 {
+    margin-bottom: 20px;
+  }
+  
+  .card-body {
+    padding: 1rem 0.75rem !important;
+  }
+
+  /* Mobile spacing */
+  .container-fluid {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  
+  .mb-4 {
+    margin-bottom: 2rem !important;
+  }
+  
+  .py-4 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+}
+
+/* Tablet responsive (768px - 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .navbar-text {
+    font-size: 0.9rem;
+  }
+  
+  .card-body h2 {
+    font-size: 1.75rem;
+  }
+  
+  .table {
+    font-size: 0.9rem;
+  }
+  
+  .list-group-item h6 {
+    font-size: 0.9rem;
+  }
+}
+
+/* Touch-friendly interactions */
+@media (hover: none) and (pointer: coarse) {
+  /* Better touch targets */
+  .btn {
+    min-height: 44px;
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .form-select {
+    min-height: 44px;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  .theme-toggle {
+    min-height: 44px;
+    min-width: 80px;
+  }
+  
+  .fab-report {
+    min-height: 56px;
+    min-width: 56px;
+  }
+  
+  /* Remove hover effects on touch devices */
+  .enhanced-card:hover {
+    transform: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .fab-report:hover {
+    transform: none;
+  }
+  
+  .chart-container:hover {
+    background: rgba(255,255,255,0.05);
+  }
+}
+
+/* Landscape mobile orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+  .display-6 {
+    font-size: 1.5rem !important;
+  }
+  
+  .card-body h2 {
+    font-size: 1.25rem !important;
+  }
+  
+  .navbar-brand {
+    font-size: 0.9rem !important;
+  }
+  
+  .fab-report {
+    bottom: 15px !important;
+    right: 15px !important;
+  }
+}
+
+/* Small mobile devices (320px - 480px) */
+@media (max-width: 480px) {
+  .navbar-brand {
+    font-size: 0.9rem !important;
+  }
+  
+  .card {
+    margin-bottom: 1rem !important;
+  }
+  
+  .card-body {
+    padding: 0.75rem !important;
+  }
+  
+  .card-header {
+    padding: 0.75rem !important;
+  }
+  
+  .display-6 {
+    font-size: 1.5rem !important;
+  }
+  
+  .card-body h2 {
+    font-size: 1.25rem !important;
+  }
+  
+  .card-body h5 {
+    font-size: 0.9rem !important;
+  }
+  
+  .table {
+    font-size: 0.75rem !important;
+  }
+  
+  .table th,
+  .table td {
+    padding: 0.25rem !important;
+  }
+  
+  .list-group-item {
+    padding: 0.5rem !important;
+  }
+  
+  .list-group-item h6 {
+    font-size: 0.75rem !important;
+  }
+  
+  .badge {
+    font-size: 0.6rem !important;
+  }
+  
+  /* Simplified charts for very small screens */
+  .recharts-wrapper {
+    font-size: 10px !important;
+  }
+  
+  .recharts-cartesian-axis-tick-value {
+    font-size: 8px !important;
+  }
+}
+
+/* PWA and full-screen enhancements */
+@media (display-mode: standalone) {
+  .navbar {
+    padding-top: env(safe-area-inset-top);
+  }
+  
+  .fab-report {
+    bottom: calc(20px + env(safe-area-inset-bottom));
+    right: calc(20px + env(safe-area-inset-right));
+  }
+}
+
+/* Print styles */
+@media print {
+  .navbar,
+  .fab-report,
+  .theme-toggle {
+    display: none !important;
+  }
+  
+  .card {
+    border: 1px solid #000 !important;
+    break-inside: avoid;
+  }
+  
+  .enhanced-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  body {
+    font-size: 12px !important;
+  }
+  
+  .chart-container {
+    page-break-inside: avoid;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .enhanced-card:hover {
+    transform: none;
+  }
+  
+  .fab-report:hover {
+    transform: none;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .card {
+    border: 2px solid #000 !important;
+  }
+  
+  .btn {
+    border: 2px solid currentColor !important;
+  }
+  
+  .theme-toggle {
+    border: 2px solid #fff !important;
+  }
+}
+
+/* Dark mode mobile adjustments */
+.dark-theme {
+  /* Mobile dark mode specific adjustments */
+  background-color: #1a1a1a;
+}
+
+@media (max-width: 768px) {
+  .dark-theme .card {
+    box-shadow: 0 1px 5px rgba(0,0,0,0.5) !important;
+  }
+  
+  .dark-theme .table {
+    border-color: #404040 !important;
+  }
+  
+  .dark-theme .form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23e0e0e0' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e") !important;
+  }
+}
